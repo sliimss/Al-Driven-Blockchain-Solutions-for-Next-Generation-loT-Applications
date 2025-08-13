@@ -5,6 +5,7 @@ Ce projet propose une architecture innovante combinant IoT, TinyML, Ensemble Lea
 L’objectif est de démontrer comment des dispositifs IoT à ressources limitées peuvent exécuter localement des modèles d’IA optimisés tout en garantissant la traçabilité et l’intégrité des résultats via la blockchain.
 
 Fonctionnalités principales:
+
 -Architecture distribuée Client-Serveur avec communication sécurisée via MQTT et SSH.
 
 -Prétraitement et sélection de caractéristiques d’un dataset de détection de malwares (Kaggle) avec LASSO et standardisation.
@@ -16,6 +17,7 @@ Fonctionnalités principales:
 -Stockage immuable des résultats d’accuracy dans une blockchain privée Ethereum via un Smart Contract Solidity déployé avec Ganache et Hardhat.
 
 Technologies clés:
+
 -Langages : Python, Solidity, C++
 
 -IA & ML : TensorFlow Lite Micro, scikit-learn
@@ -27,6 +29,7 @@ Technologies clés:
 -Environnements : Ubuntu Server/Desktop, VirtualBox
 
 Architecture générale:
+
 -Serveur central : prépare, divise et distribue les données vers les clients, puis agrège et envoie les résultats vers la blockchain.
 
 -Clients IoT simulés : reçoivent un sous-ensemble de données, entraînent un modèle TinyML localement, et renvoient les performances au serveur.
@@ -34,6 +37,7 @@ Architecture générale:
 -Blockchain : enregistre de manière sécurisée les résultats agrégés, garantissant transparence et intégrité.
 
 Résultats:
+
 -Précision de plus de 95% sur la détection de malwares après optimisation TinyML.
 
 -Transmission et agrégation fiables dans un environnement distribué.
